@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "eslint lib && nyc mocha"
+    "test": "eslint lib && nyc -r=text -r=lcov mocha"
   },
   "repository": {
     "type": "git",
