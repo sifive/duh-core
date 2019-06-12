@@ -7,12 +7,16 @@ const expect = chai.expect;
 
 describe('basic', () => {
   it('readDuh', done => {
-    expect(lib.readDuh).to.be.a('function');
-    done();
+    lib.readDuh({filename: 'package.json'}).then(val => {
+      expect(val).to.be.an('object');
+      done();
+    });
   });
   it('expandAll', done => {
-    expect(lib.expandAll).to.be.a('function');
-    done();
+    lib.expandAll({}).then(val => {
+      expect(val).to.be.an('object');
+      done();
+    });
   });
 });
 
