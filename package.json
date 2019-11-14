@@ -33,6 +33,8 @@
     "extends": "@drom/eslint-config/eslint4/node8"
   },
   "dependencies": {
+    "ajv": "^6.10.2",
+    "duh-schema": "^0.7.4",
     "fs-extra": "^8.1.0",
     "json-refs": "^3.0.13",
     "json5": "^2.1.1"
