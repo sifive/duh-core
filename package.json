@@ -1,6 +1,6 @@
 {
   "name": "duh-core",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "DUH core",
   "main": "lib/index.js",
   "directories": {
