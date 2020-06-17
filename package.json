@@ -3,6 +3,9 @@
   "version": "0.9.1",
   "description": "DUH core",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "directories": {
     "lib": "lib"
   },
