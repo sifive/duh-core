@@ -58,15 +58,15 @@ const dut = {
     },
     result: {
       vendor: 'ven', library: 'l1', name: 'd1', version: 'v1',
-      model: {ports: {foo_t0_valid: -1, bar_i0_valid: 1}},
+      model: {ports: {foo_tvalid: -1, bar_tvalid: 1}},
       busInterfaces: [{
         name: 'foo', interfaceMode: 'slave',
         busType: {vendor: 'amba.com', library: 'AMBA4', name: 'AXI4Stream', version: 'r0p0_1'},
-        abstractionTypes: [{viewRef: 'RTLview', portMaps: {TVALID: 'foo_t0_valid'}}]
+        abstractionTypes: [{viewRef: 'RTLview', portMaps: {TVALID: 'foo_tvalid'}}]
       }, {
         name: 'bar', interfaceMode: 'master',
         busType: {vendor: 'amba.com', library: 'AMBA4', name: 'AXI4Stream', version: 'r0p0_1'},
-        abstractionTypes: [{viewRef: 'RTLview', portMaps: {TVALID: 'bar_i0_valid'}}]
+        abstractionTypes: [{viewRef: 'RTLview', portMaps: {TVALID: 'bar_tvalid'}}]
       }]
     }
   }
