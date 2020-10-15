@@ -21,7 +21,10 @@ const dut = {
     result: {
       vendor: 'ven', library: 'l1', name: 'd1', version: 'v1',
       model: {ports: {}},
-      busInterfaces: []
+      busInterfaces: [],
+      fileSets: {
+        Hdl: [{name: './d1.v'}]
+      }
     }
   },
   simple: {
@@ -67,7 +70,10 @@ const dut = {
         name: 'bar', interfaceMode: 'master',
         busType: {vendor: 'amba.com', library: 'AMBA4', name: 'AXI4Stream', version: 'r0p0_1'},
         abstractionTypes: [{viewRef: 'RTLview', portMaps: {TVALID: 'bar_tvalid'}}]
-      }]
+      }],
+      fileSets: {
+        Hdl: [{name: './d1.v'}]
+      }
     }
   }
 };
