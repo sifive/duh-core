@@ -21,14 +21,11 @@ const dut = {
 };
 
 describe('invalid', () => {
-
-  Object.keys(dut).map(key => {
-
+  for (const key of Object.keys(dut)) {
     it(key, async () => {
       expect(validateSchema(dut[key])).to.eventually.throw(TypeError);
     });
-
-  });
+  }
 });
 
 /* eslint-env mocha */
