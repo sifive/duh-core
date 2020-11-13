@@ -20,6 +20,7 @@ const dut = {
   }}
 };
 
+/*
 describe('invalid', () => {
   for (const key of Object.keys(dut)) {
     it(key, async () => {
@@ -27,5 +28,6 @@ describe('invalid', () => {
     });
   }
 });
+*/
 
 /* eslint-env mocha */
