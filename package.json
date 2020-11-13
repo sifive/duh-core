@@ -10,7 +10,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "eslint lib && mocha test && nyc -r=text -r=lcov mocha test"
+    "test": "eslint lib && mocha test && nyc -r=text -r=lcov mocha test",
+    "build": "antlr4 -Dlanguage=JavaScript -visitor src/Expr.g4"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
   "dependencies": {
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
+    "antlr4": "^4.8.0",
     "duh-schema": "^0.10.1",
     "immutability-helper": "^3.1.1",
     "json-refs": "^3.0.15",
