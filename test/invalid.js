@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
@@ -20,7 +21,6 @@ const dut = {
   }}
 };
 
-/*
 describe('invalid', () => {
   for (const key of Object.keys(dut)) {
     it(key, async () => {

@@ -10,7 +10,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "eslint lib && mocha test && nyc -r=text -r=lcov mocha test"
+    "test": "eslint lib test && nyc -r=text -r=lcov mocha"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,20 @@
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
     "chai": "^4.3.6",
+    "coveralls": "^3.1.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.8.0",
     "mocha": "^9.2.0",
     "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
+    "duh-schema": "^0.10.2",
+    "immutability-helper": "^3.1.1",
+    "json-refs": "^3.0.15",
+    "json5": "^2.2.0",
+    "lodash.get": "^4.4.2"
   },
   "engines": {
     "node": ">=8"
@@ -41,14 +51,5 @@
     "globals": {
       "BigInt": "readonly"
     }
-  },
-  "dependencies": {
-    "ajv": "^6.12.6",
-    "ajv-keywords": "^3.5.2",
-    "duh-schema": "^0.10.2",
-    "immutability-helper": "^3.1.1",
-    "json-refs": "^3.0.15",
-    "json5": "^2.2.0",
-    "lodash.get": "^4.4.2"
   }
 }
