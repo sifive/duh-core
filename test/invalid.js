@@ -30,4 +30,3 @@ describe('invalid', () => {
 });
 */
 
-/* eslint-env mocha */

@@ -99,4 +99,3 @@ describe('design', () => {
   });
 });
 
-/* eslint-env mocha */

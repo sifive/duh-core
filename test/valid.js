@@ -41,4 +41,3 @@ describe('valid', () => {
   });
 });
 
-/* eslint-env mocha */

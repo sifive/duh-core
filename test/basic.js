@@ -20,4 +20,3 @@ describe('basic', () => {
   });
 });
 
-/* eslint-env mocha */
